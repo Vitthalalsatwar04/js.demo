@@ -80,7 +80,9 @@
 
 
     document.querySelector("#images").addEventListener('click',function(e){
-        console.log(e.target.pa);
+        console.log(e.target.paretNode);
+        let removeIt = e.target.paretNode()
+        removeIt.remove()
           
         
     })
